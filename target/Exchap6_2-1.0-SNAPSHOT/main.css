@@ -1,0 +1,33 @@
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+h1 { 
+    color: teal;
+}
+label {
+    float: left;
+    width: 6em;
+    margin-bottom: 0.5em;
+}
+input[type="text"], input[type="email"] {
+    width: 15em;
+    margin-left: 0.5em;    
+    margin-bottom: 0.5em;
+}
+.survey{
+    float: left;
+    width: 6em;
+    margin-bottom: 0.5em;
+    font-weight: bold; /* Thêm dòng này để in đậm */
+}
+br {
+    clear: both;
+}
+span {
+    margin-left: 1.5em; /* Thêm khoảng cách dưới mỗi span */
+}
+#submit {
+    margin-left: 0.5em; }
