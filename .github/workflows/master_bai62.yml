@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy WAR app to Azure Web App - Bai62
+name: Build and deploy WAR app to Azure Web App - bai62
 
 on:
   push:
@@ -49,15 +49,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_3F25A898A5124826BBF97AEA0CC0DF1B }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_92F15CC1D1764497940B0353053AD0E3 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_2052B1D43BB04B4C8274AA414C5A678F }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_FE4A950B120C4B39B03E8582A2120AD1 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_8F2CD1099BE04A5581071FC559C0833A }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_26E38C9D7A87403082E76A9C1AF6B72E }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'Bai62'
+          app-name: 'bai62'
           slot-name: 'Production'
           package: '*.war'
           
